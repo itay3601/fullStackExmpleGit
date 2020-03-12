@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>itay</title>
+    <link rel="stylesheet" type="text/css" href="CssFile.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="=#home">Home</a></li>
+            <li><a href="=#news">news</a></li>
+            <li><a href="=#contant">contant</a></li>
+            <li><a href="=#about">about</a></li>
+
+            <li class="topnav-rig"><a href="#login">Login</a></li>
+            <li class="topnav-rig"><a href="#signinup">Sign Up</a></li>
+
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownmenu()"> &#9776;</a></li>
+
+        </ul>
+    </nav>
+
+    <script>
+        function dropdownmenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
